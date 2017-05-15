@@ -16,6 +16,7 @@
 			<div class="form-group">
 				<label class="radio-inline"><input type="radio" name="optradio" ng-model="poisonFilter" value="true">Non-Poisonous</label>
 				<label class="radio-inline"><input type="radio" name="optradio" ng-model="poisonFilter" value="false">Poisonous</label>
+				<label class="radio-inline"><input type="radio" name="optradio" ng-model="poisonFilter" value="">All Mushrooms</label>
 			</div>
 			<div class="row">
 				<div ng-repeat="mushroom in mushrooms | filter: mushroomSearch | filter: {'edible' : poisonFilter}">
